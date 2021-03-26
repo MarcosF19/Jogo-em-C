@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  //abs()  
-#include <time.h>
+#include <time.h> //time() e srand()
 #include <math.h>
 
 #define NUMERO_DE_TENTATIVAS 3 //Define, constante e números mágicos
