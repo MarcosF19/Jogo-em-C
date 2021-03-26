@@ -67,10 +67,11 @@ int main(void)
       pontosperdidos = pontosperdidos * -1; 
     }
   }
-  //função time e rand 
+  //função time e srand 
   int segundos = time(0);
   srand(segundos); 
 
+  //função rand - gerar número aletório 
   int numerogrande = rand(); 
   //máquina só poderá chutar números de 0 a 99.
   //Operador % resto da divisão por 100 
