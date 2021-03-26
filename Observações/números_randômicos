@@ -1,0 +1,15 @@
+Precisamos fazer com que, a cada vez que o executarmos, o computador pense
+em um número diferente. Sorte a nossa que a stdlib contém uma função só
+para isso: uma que nos devolve um número randômico.
+
+A função chama-se rand() e ela nos devolve um número aleatório a
+cada vez que é executada.
+
+Computadores não são capazes de gerar números 100% randômicos. Por isso, dizemos que eles são pseudorrandômico
+
+Ex: 
+int n1 = rand();
+printf("%d", n1);
+int n2 = rand();
+printf("%d", n2);
+

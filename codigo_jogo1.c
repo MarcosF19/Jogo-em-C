@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>  //abs()  
+#include <time.h>
 #include <math.h>
 
 #define NUMERO_DE_TENTATIVAS 3 //Define, constante e números mágicos
@@ -14,6 +16,7 @@ int main(void)
   int tentativas = 1;
   double pontos = 1000;
   int outravariavel = pontos * 7;
+  double pontoperdidos; 
 
   /*pontos = pontos + 2;
   pontos = pontos * 4 / 3; 
@@ -57,13 +60,24 @@ int main(void)
   //double -> "%f" || int -> "%d" 
   for (int pontos = 1; pontos <= NUMERO_DE_TENTATIVAS; pontos++)
   {
-    int pontos = ((4 * 2) + (1 / 2)) * 3 - 1;
-    double pontosperdidos = (chute - numerosecreto) / (double)2;
-    double pontosperdidos = (double)(chute - numerosecreto) / (double)2;
+    int pontos = ((4 * 2) + (1 / 2)) * 3 - 1; //função matemática abs()
+    double pontosperdidos = abs(chute - numerosecreto) / 2.0;
+    /*double pontosperdidos = (double)(chute - numerosecreto) / (double)2;*/
+    if(pontosperdidos <0){
+      pontosperdidos = pontosperdidos * -1; 
+    }
   }
+  //função time e rand 
+  int segundos = time(0);
+  srand(segundos); 
+
+  int numerogrande = rand(); 
+  //máquina só poderá chutar números de 0 a 99.
+  //Operador % resto da divisão por 100 
+  int numerossecreto = numerogrande % 100; 
 
   printf("Você fez %.2f pontos\n", pontos);
   printf("Fim de jogo!\n");
   printf("Obrigado por jogar!", tentativas);
 }
-// página 61
+// página 67

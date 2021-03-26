@@ -1,0 +1,28 @@
+Função abs()  ->  que recebe um inteiro como parâmetro, e o transforma em positivo. 
+
+A função abs(), assim como a printf, precisa ser importada de outro
+arquivo. Fazemos isso por meio de include, igual fizemos com o arquivo
+stdio.h. Para usarmos a abs(), precisamos importar stdlib.h, que significa standard library. Basta adicionarmos outra linha de inclusão no começo
+do arquivo. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+- Tanto a stdlib quanto a stdio são bastante comuns em programas C
+
+Data é algo bem interessante em sistemas de computação. Uma maneira
+muito comum de se olhar para ela é pensar nos segundos que se passaram
+desde uma data específica. Afinal, tendo o número de segundos passados, é
+possível saber a data exata. Em computação, a data escolhida para tal é “1 de
+janeiro de 1970"; ela é, inclusive, chamada de Epoch. 
+
+- a função time(), passando o
+valor “zero” para ela. Em seguida, ela é passada para a função srand(), que
+é quem define a semente.
+
+#include <time.h> 
+
+int segundos = time(0);
+srand(segundos);
+int n1 = rand();
+printf("%d", n1);
