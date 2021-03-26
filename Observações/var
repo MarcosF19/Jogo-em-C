@@ -1,0 +1,25 @@
+/*long - números longos
+int - inteiros   - %d 
+short - inteiro menor
+float - double menor  
+double -  casas decimais - %f, consegu guardar número maiores e casas decimais mais que int  
+
+long n1;
+double n2;
+long n3; 
+short n4;
+float n5; 
+
+- SE QUISER IMPRIMIR TANTAS CASAS DECIMAIS: 
+
+O C automaticamente imprime várias casas decimais quando usamos
+a máscara %f no printf(). Mas podemos mudar isso. Se usarmos a
+máscara %.2f, estamos dizendo que queremos imprimir aquele número
+com apenas 2 casas decimais:
+printf("Você fez %.2f pontos\n", pontos);
+
+
+-Nesse caso, precisamos “converter” as variáveis inteiras para algum tipo
+com ponto flutuante. A essa conversão, damos o nome de (casting). Fazê-la
+é bem fácil: basta colocarmos o tipo para o qual queremos converter entre
+parênteses, antes de usar a variável. (página 62)*/ 
