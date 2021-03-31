@@ -10,10 +10,31 @@ int main()
   printf("* Bem-vindo ao Jogo de Adivinhação *\n");
   printf("************************************\n");
 
+  int nivel;
+  int totaldetentativas;
+
   int chute;
   int acertou = 0;
   int tentativas = 1;
   double pontos = 1000;
+
+  printf("Qual o nível de dificuldades?\n");
+  printf("(1) Fácil (2) Médio (3) Difícil\n\n");
+  printf("Escolha: ");
+  scanf("%d", &nivel);
+
+  if (nivel == 1)
+  {
+    totaldetentativas = 20;
+  }
+  else if (nivel == 2)
+  {
+    totaldetentativas = 15;
+  }
+  else
+  {
+    totaldetentativas = 6;
+  }
 
   //função time e srand
   srand(time(0));
@@ -64,4 +85,4 @@ int main()
   printf("Você fez %.2f pontos\n", pontos);
   printf("Obrigado por jogar!\n", tentativas);
 }
-// página 67
+// página 71
