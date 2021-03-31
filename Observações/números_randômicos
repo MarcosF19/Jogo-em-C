@@ -13,3 +13,5 @@ printf("%d", n1);
 int n2 = rand();
 printf("%d", n2);
 
+
+Gerar números randômicos, usando srand() e rand()
