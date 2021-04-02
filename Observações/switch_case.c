@@ -1,3 +1,5 @@
+/*O switch é um if mais simples.
+Quando temos condições repetidas, nas quais comparamos uma variável inteira com vários números*/
 #include <stdio.h>
 #include <stdlib.h> //abs()
 #include <time.h>   //time() e srand()
@@ -29,17 +31,21 @@ int main()
   printf("Escolha: ");
   scanf("%d", &nivel);
 
-  if (nivel == 1)
+  //switch case entra aqui
+
+  switch (nivel)
   {
-    totaldetentativas = 20;
-  }
-  else if (nivel == 2)
-  {
-    totaldetentativas = 15;
-  }
-  else
-  {
-    totaldetentativas = 6;
+  case 1: 
+      totaldetentativas = 20;
+      break;
+
+  case 2: 
+      totaldetentativas = 15; 
+      break;     
+  
+  case 3:
+      totaldetentativas = 6; 
+      break;
   }
 
   //sabemos a quantidade de vezes usa o for
